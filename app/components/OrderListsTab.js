@@ -3,6 +3,7 @@ import { StyleSheet, View, TouchableOpacity, FlatList } from "react-native";
 
 import Icon from "../common/Icon";
 import TextStyle from "../common/TextStyle";
+import ButtonStyle from "../common/ButtonStyle";
 
 import colors from "../configs/colors";
 import { formatNumber } from "../configs/global_helpers";
@@ -132,19 +133,28 @@ function OrderListsTab({ data, onItemSelect }) {
       {/* action buttons */}
       <View style={styles.orderActions}>
         <View style={styles.successActions}>
-          <TouchableOpacity style={styles.orderBtnSave}>
-            <TextStyle style={styles.orderBtnText}>Save</TextStyle>
-          </TouchableOpacity>
+          <ButtonStyle
+            btnStyle={styles.orderBtnSave}
+            txtStyle={styles.orderBtnText}
+          >
+            Save
+          </ButtonStyle>
 
-          <TouchableOpacity style={styles.orderBtnProceed}>
-            <TextStyle style={styles.orderBtnText}>Proceed</TextStyle>
-          </TouchableOpacity>
+          <ButtonStyle
+            btnStyle={styles.orderBtnProceed}
+            txtStyle={styles.orderBtnText}
+          >
+            Proceed
+          </ButtonStyle>
         </View>
 
         <View style={styles.failActions}>
-          <TouchableOpacity style={styles.orderBtnVoid}>
-            <TextStyle style={styles.orderBtnText}>Void Order</TextStyle>
-          </TouchableOpacity>
+          <ButtonStyle
+            btnStyle={styles.orderBtnVoid}
+            txtStyle={styles.orderBtnText}
+          >
+            Void Order
+          </ButtonStyle>
         </View>
       </View>
     </View>
@@ -245,11 +255,13 @@ const styles = StyleSheet.create({
     width: "50%",
     borderRightWidth: 1,
     borderRightColor: colors.lightGray,
+    backgroundColor: colors.success,
   },
 
   orderBtnProceed: {
     padding: 10,
     width: "50%",
+    backgroundColor: colors.success,
   },
   orderBtnText: {
     textAlign: "center",

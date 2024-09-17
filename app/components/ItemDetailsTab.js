@@ -30,6 +30,7 @@ import {
 import Icon from "../common/Icon";
 import TextStyle from "../common/TextStyle";
 import ButtonStyle from "../common/ButtonStyle";
+import VariantButton from "../common/VariantButton";
 
 import colors from "../configs/colors";
 import { TABS } from "../configs/constants";
@@ -306,20 +307,32 @@ function ItemDetailsTab({ data, onBackPress, onAddOrderPress }) {
       {/* buttons */}
       <View style={styles.detailsActions}>
         {preSelectedItem && (
-          <TouchableOpacity style={styles.proceedBtn} onPress={onAddOrder}>
-            <TextStyle style={styles.btnTexts}>Update Order</TextStyle>
-          </TouchableOpacity>
+          <ButtonStyle
+            btnStyle={styles.proceedBtn}
+            txtStyle={styles.btnTexts}
+            onPress={onAddOrder}
+          >
+            Update Order
+          </ButtonStyle>
         )}
 
         {!preSelectedItem && (
-          <TouchableOpacity style={styles.proceedBtn} onPress={onAddOrder}>
-            <TextStyle style={styles.btnTexts}>Add Order</TextStyle>
-          </TouchableOpacity>
+          <ButtonStyle
+            btnStyle={styles.proceedBtn}
+            txtStyle={styles.btnTexts}
+            onPress={() => onAddOrder()}
+          >
+            Add Order
+          </ButtonStyle>
         )}
 
-        <TouchableOpacity style={styles.cancelBtn} onPress={onBackPress}>
-          <TextStyle style={styles.btnTexts}>Cancel</TextStyle>
-        </TouchableOpacity>
+        <ButtonStyle
+          btnStyle={styles.cancelBtn}
+          txtStyle={styles.btnTexts}
+          onPress={onBackPress}
+        >
+          Cancel
+        </ButtonStyle>
       </View>
     </View>
   );

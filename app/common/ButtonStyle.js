@@ -13,8 +13,11 @@ function ButtonStyle({ children, onPress, btnStyle, txtStyle }) {
   };
 
   return (
-    <TouchableOpacity style={[btnStyle, styles.button]} onPress={onBtnClick}>
-      <TextStyle style={[txtStyle, styles.btnText]}>{children}</TextStyle>
+    <TouchableOpacity
+      style={[styles.button, btnStyle]}
+      onPress={onPress || onBtnClick}
+    >
+      <TextStyle style={txtStyle || styles.btnText}>{children}</TextStyle>
     </TouchableOpacity>
   );
 }
