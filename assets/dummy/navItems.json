@@ -1,0 +1,63 @@
+[
+    {
+        "title": "Placeholder 1",
+        "icon": "paperclip",
+        "navigateTo": "screen",
+        "id": 1
+    },
+    {
+        "title": "Placeholder 2",
+        "icon": "paperclip",
+        "navigateTo": "screen",
+        "id": 2
+    },
+    {
+        "title": "Placeholder 3",
+        "icon": "paperclip",
+        "navigateTo": "screen",
+        "id": 3
+    },
+    {
+        "title": "Placeholder 4",
+        "icon": "paperclip",
+        "navigateTo": "screen",
+        "id": 4,
+        "showBadge": true
+    },
+    {
+        "title": "Placeholder 5",
+        "icon": "paperclip",
+        "navigateTo": "screen",
+        "id": 5
+    },
+    {
+        "title": "Placeholder 6",
+        "icon": "paperclip",
+        "navigateTo": "screen",
+        "id": 6
+    },
+    {
+        "title": "Placeholder 7",
+        "icon": "paperclip",
+        "navigateTo": "screen",
+        "id": 7
+    },
+    {
+        "title": "Placeholder 8",
+        "icon": "paperclip",
+        "navigateTo": "screen",
+        "id": 8
+    },
+    {
+        "title": "Placeholder 9",
+        "icon": "paperclip",
+        "navigateTo": "screen",
+        "id": 9
+    },
+    {
+        "title": "Placeholder 10",
+        "icon": "paperclip",
+        "navigateTo": "screen",
+        "id": 10
+    }
+]

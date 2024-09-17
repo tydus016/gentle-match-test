@@ -1,0 +1,16 @@
+[
+    {
+        "title": "Apply a coupon",
+        "name": "ApplyCoupon",
+        "icon": "ticket-outline",
+        "navigateTo": "ApplyCoupon",
+        "id": 1
+    },
+    {
+        "title": "Clear order lists",
+        "name": "ClearOrderLists",
+        "icon": "trash-outline",
+        "navigateTo": null,
+        "id": 2
+    }
+]
