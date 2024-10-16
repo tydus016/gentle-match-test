@@ -9,8 +9,10 @@ import OverlaySpinner from "./OverlaySpinner";
 
 function TextStyle(props) {
   const [fontsLoaded] = useFonts({
-    Regular: require("../libraries/fonts/Nunito-Regular.ttf"),
-    Light: require("../libraries/fonts/Nunito-Light.ttf"),
+    Thin: require("../libraries/fonts/Roboto-Thin.ttf"),
+    RegularSerif: require("../libraries/fonts/RobotoSerif-Regular.ttf"),
+    Regular: require("../libraries/fonts/Roboto-Regular.ttf"),
+    Light: require("../libraries/fonts/Roboto-Light.ttf"),
     Bold: require("../libraries/fonts/Nunito-Bold.ttf"),
     Medium: require("../libraries/fonts/Nunito-Medium.ttf"),
   });

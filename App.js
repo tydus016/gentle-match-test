@@ -8,16 +8,18 @@ import store from "./app/store/store";
 const Stack = createNativeStackNavigator();
 
 import Main from "./app/screens/Main";
+import ResetPassword from "./app/screens/ResetPassword";
 
 export default function App() {
   return (
     <Provider store={store}>
       <NavigationContainer>
         <Stack.Navigator
-          initialRouteName="Main"
+          initialRouteName="ResetPassword"
           screenOptions={{ headerShown: false }}
         >
           <Stack.Screen name="Main" component={Main} />
+          <Stack.Screen name="ResetPassword" component={ResetPassword} />
         </Stack.Navigator>
       </NavigationContainer>
     </Provider>
